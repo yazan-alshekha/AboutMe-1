@@ -25,6 +25,7 @@ switch (answer1) {
         alert('Your Answer Should Be Yes or No Y/N !')
         break;    
     }
+    
 
 
 
@@ -114,7 +115,7 @@ for (var i = 0; i < 4 ; i++) {
     answer6 = prompt('no '+userName+' too old');
 }
 }
-if (score == false){alert(userName+' My Age Is 25');}
+if (i >=4 ){alert(userName+' My Age Is 25');}
 
 
 /*
@@ -146,10 +147,10 @@ for (var i = 0; i < 6; i++) {
     if(t == true){
         alert('Good Answer '+userName+' I used '+programingLangusges.join(' and ')+' To Produce My web Page');
         score +=1;
-        i +=6;
+        break;
     }
 }
-if(score == 0){alert('No '+userName+' I Used '+programingLangusges.join(' and '))}
+if(i >=5 ){alert('No '+userName+' I Used '+programingLangusges.join(' and '))}
 
 alert(userName+' you got '+score+' out of 7');
 

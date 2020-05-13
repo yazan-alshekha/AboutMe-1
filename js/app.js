@@ -136,7 +136,7 @@ if (answer6 == myAge) {
         }
     }
 }
-
+*/
 
 
 var programingLangusges = ['html', 'css', 'javascript'];

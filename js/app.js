@@ -2,7 +2,6 @@
 
 
 var score = 0;
-
 var userName = prompt('What is Your Name?');
 console.log(userName);
 alert('Your Welcome ' + userName + ' In My Web Page');
@@ -104,17 +103,36 @@ switch (answer5) {
 var question6 = prompt('How Old Am I ?');
 var answer6 = question6;
 var myAge = 25;
+for (var i = 0; i < 4 ; i++) {
+    if(answer6 == myAge){
+        alert('graet '+userName+' I am 25 years old');
+        score +=1;
+        break;    
+}else if(answer6 < myAge){
+   answer6 = prompt('no '+userName+' to low');
+}else if(answer6 > myAge){
+    answer6 = prompt('no '+userName+' too old');
+}
+}
+if (score == false){alert(userName+' My Age Is 25');}
 
+
+/*
+"Example For me"
 if (answer6 == myAge) {
-    prompt('Great ' + userName + ' I am 25 years old');
+    alert('Great ' + userName + ' I am 25 years old');
     score +=1;
 } else {
+  //  var newAnswer = prompt('try again');
     for (var i = 0; i < 3; i++) {
-        var newAnswer = prompt('try again');
         if (newAnswer == myAge) {
             alert('Great ' + userName + ' I am 25 years old');
             score +=1;
             i += 4;
+        }else if(newAnswer < myAge){
+            alert('too low');
+        }else if(newAnswer > myAge){
+            alert('too old');
         }
     }
 }
@@ -122,7 +140,6 @@ if (answer6 == myAge) {
 
 
 var programingLangusges = ['html', 'css', 'javascript'];
-
 for (var i = 0; i < 6; i++) {
     var question7 = prompt('Which programming language do you think I used to develop this web site?');
     var t = programingLangusges.includes(question7);
@@ -132,6 +149,8 @@ for (var i = 0; i < 6; i++) {
         i +=6;
     }
 }
+if(score == 0){alert('No '+userName+' I Used '+programingLangusges.join(' and '))}
 
 alert(userName+' you got '+score+' out of 7');
+
 alert('Thank You ' + userName + ' For Visting My Web Page And Playing With Me, Please Read My Web Page To Know Some Information About Me !');

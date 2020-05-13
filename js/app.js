@@ -8,7 +8,21 @@ alert('Your Welcome ' + userName + ' In My Web Page');
 
 var ask = confirm('Okay ' + userName + ' Let\'s Play a Game! I Will Ask You and Your Answer Shuld be Yes or No Y/N');
 
-var question1 = prompt('Did I am smoker or no?!')
+q1();
+q2();
+q3();
+q4();
+q5();
+q6();
+q7();
+
+
+
+
+
+
+function q1(){
+    var question1 = prompt('Did I am smoker or no?!')
 var answer1 = question1.toLowerCase();
 
 switch (answer1) {
@@ -27,9 +41,11 @@ switch (answer1) {
     }
     
 
+}
 
 
-var question2 = prompt('Do You think I am a Fat Man?')
+function q2(){
+    var question2 = prompt('Do You think I am a Fat Man?')
 var answer2 = question2.toLowerCase();
 
 switch (answer2) {
@@ -46,8 +62,10 @@ switch (answer2) {
         alert('Your Answer Should Be Yes or No Y/N !')
         break;
 }
+}
 
-var question3 = prompt('Do You think I Like Tea?')
+function q3(){
+    var question3 = prompt('Do You think I Like Tea?')
 var answer3 = question3.toLowerCase();
 
 switch (answer3) {
@@ -64,8 +82,10 @@ switch (answer3) {
         alert('Your Answer Should Be Yes or No Y/N !')
         break;
 }
+}
 
-var question4 = prompt('Do you think I am a skilled painter?')
+function q4(){
+    var question4 = prompt('Do you think I am a skilled painter?')
 var answer4 = question4.toLowerCase();
 
 switch (answer4) {
@@ -82,8 +102,10 @@ switch (answer4) {
         alert('Your Answer Should Be Yes or No Y/N !')
         break;
 }
+}
 
-var question5 = prompt('Do you think I am a good programmer?')
+function q5(){
+    var question5 = prompt('Do you think I am a good programmer?')
 var answer5 = question5.toLowerCase();
 
 switch (answer5) {
@@ -100,8 +122,10 @@ switch (answer5) {
         alert('Your Answer Should Be Yes or No Y/N !');
         break;
 }
+}
 
-var question6 = prompt('How Old Am I ?');
+function q6(){
+    var question6 = prompt('How Old Am I ?');
 var answer6 = question6;
 var myAge = 25;
 for (var i = 0; i < 4 ; i++) {
@@ -117,6 +141,7 @@ for (var i = 0; i < 4 ; i++) {
 }
 if (i >=4 ){alert(userName+' My Age Is 25');}
 
+}
 
 /*
 "Example For me"
@@ -139,7 +164,8 @@ if (answer6 == myAge) {
 }
 */
 
-
+function q7(){
+    
 var programingLangusges = ['html', 'css', 'javascript'];
 for (var i = 0; i < 6; i++) {
     var question7 = prompt('Which programming language do you think I used to develop this web site?');
@@ -155,3 +181,4 @@ if(i >=5 ){alert('No '+userName+' I Used '+programingLangusges.join(' and '))}
 alert(userName+' you got '+score+' out of 7');
 
 alert('Thank You ' + userName + ' For Visting My Web Page And Playing With Me, Please Read My Web Page To Know Some Information About Me !');
+}
